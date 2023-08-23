@@ -6,12 +6,11 @@
 
 {% block contenido_cambia %}
 <h1>Cursos:</h1>
-<form action="{% url 'curso' %}"  method="POST"> {% csrf_token %}
+<form action="{% url 'cursos' %}"  method="POST"> {% csrf_token %}
     <table>
         {{ formulario.as_table }}
     </table>
     <input type = "submit" value="GUARDAR DATOS DEL CURSO">
-
 </form>
 
     <h3>{{ mensaje }}</h3>
